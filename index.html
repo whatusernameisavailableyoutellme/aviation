@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RAMP SAFETY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles_L.css">
+ </head>
+<body>
+
+  <!-- ✅ User Info -->
+  <div id="user-info" class="user-info" style="display: none;">
+    <div class="user-initials" id="user-initials">U</div>
+    <div>
+      <div id="username-display">Welcome, User</div>
+    </div>
+    <button class="logout-btn" onclick="logout()">Log Out</button>
+  </div>
+
+  <!-- ✅ Login Page -->
+  <div id="login-page" class="container">
+    <div class="login-container">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username (e.g. someone@goindigo.in)" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="login()">Log In</button>
+    </div>
+  </div>
+
+  <!-- ✅ Main App -->
+  <div id="main-content" class="container" style="display: none;">
+    <header>
+      <h1><span class="title-part1">Ramp Safety</span> <span class="title-part2">Program</span></h1>
+    </header>
+
+    <!-- Toggle Container -->
+    <div id="toggle-container" class="toggle-container">
+      <span>Select Theme:</span>
+      <button id="theme-toggle" class="toggle-button">Millennial (Study Mode)</button>
+    </div>
+
+    <section class="grid day-buttons">
+      <button class="day-button" data-day="day1">Day 1</button>
+      <button class="day-button" data-day="quiz1">Quiz 1</button>
+    </section>
+
+    <section class="grid day-buttons-second">
+      <button class="day-button" data-day="day2">Day 2</button>
+      <button class="day-button" data-day="quiz2">Quiz 2</button>
+    </section>
+
+    <section class="grid quiz-grid">
+      <button class="day-button" data-day="quiz3">Final Quiz</button>
+      </section>
+  </div>
+
+  <script src="script_index.js" defer></script>
+</body>
+</html>
